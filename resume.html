@@ -1,11 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <title>My Resume</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 16px;
+            font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            width: 100vw;
+            overflow-x: hidden;
+            color: #000000d2;
+        }
+
+        .color1 {
+            background-color: #f5edd9;
+        }
+
+        .color2 {
+            background-color: #fee1c7;
+        }
+
+        .color3 {
+            background-color: #42AAF5;
+        }
+
+        .color4 {
+            background-color: #99ECAE;
+        }
+
+        .color5 {
+            background-color: #fa7e61;
+        }
+
+        .color6 {
+            background-color: #f44174;
+        }
+
+
+
+        .container {
+            margin:auto;
+            margin-top: 1rem;
+            padding: 1rem;
+            /* border: 1px solid black; */
+            border-radius: 5px;
+            width: 95vw;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        img {
+            width: 150px;
+        }
+
+        .box-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            text-align: center;
+            border-radius: 5px;
+            opacity: .8;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .box:hover {
+            opacity: 2;
+        }
+
+        .body-container {
+            margin-top: 1rem;
+            padding: .5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* border: 1px solid black; */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .body-left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            text-transform: uppercase;
+            width: 30%;
+            height: 400px;
+            /* background-color: #f44174; */
+            /* border: 1px solid black; */
+        }
+
+        .body-left h3 {
+            font-size: 1.2rem;
+        }
+
+        .body-left h4 {
+            color: #ef2b62;
+            font-size: .8rem;
+        }
+
+        .body-left {
+            text-transform: capitalize;
+            font-size: .8rem;
+        }
+
+        .body-left img {
+            width: 125px;
+            border-radius: 50%;
+            border: 3px solid #f44174;
+        }
+
+        .body-left .social-icons img {
+            margin: 1.5rem .5rem 0 0;
+            border-radius: 0;
+            border: none;
+            width: 40px;
+        }
+
+        .body-middel {
+            width: 30%;
+            height: 400px;
+            padding: 1rem;
+            font-size: .9rem;
+            /* border: 1px solid black; */
+        }
+
+
+        .body-middel h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .body-middel p {
+            margin: .5rem 0;
+        }
+
+        .body-middel span {
+            font-family: cursive;
+            font-weight: 600;
+        }
+
+        .body-right {
+            width: 30%;
+            height: 400px;
+            padding: 1rem;
+            /* border: 1px solid black; */
+            text-align: center;
+        }
+
+        .body-right h3 {
+            margin-bottom: 1rem;
+        }
+
+        .body-right p {
+            font-family: cursive;
+            font-weight: 600;
+            text-align: start;
+        }
+
+        .process-bar {
+            /* border: 1px solid black; */
+            height: 8px;
+            margin-bottom: 1rem;
+            margin-top: .3rem;
+            border-radius: 15px;
+        }
+
+        .process-bar>div {
+            border: none;
+            height: 8px;
+            border-radius: 15px;
+            background: #f44174;
+        }
+
+        .width100 {
+            width: 100%;
+        }
+
+        .width90 {
+            width: 90%;
+        }
+
+        .width80 {
+            width: 80%;
+        }
+
+        .width70 {
+            width: 70%;
+        }
+
+        .width60 {
+            width: 60%;
+        }
+
+        .width50 {
+            width: 50%;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="box-container">
+            <div class="box color1">
+                <img src="https://img.icons8.com/?size=512&id=63980&format=png" alt="">
+                <p>About Me</p>
+            </div>
+            <div class="box color2">
+                <img src="https://img.icons8.com/?size=512&id=109468&format=png" alt="">
+                <p>Contacts</p>
+            </div>
+            <div class="box color3">
+                <img src="https://img.icons8.com/?size=512&id=110198&format=png" alt="">
+                <p>My Service</p>
+            </div>
+            <div class="box color4">
+                <img src="https://img.icons8.com/?size=512&id=115648&format=png" alt="">
+                <p>My Resume</p>
+            </div>
+            <div class="box color5">
+                <img src="https://img.icons8.com/?size=512&id=118632&format=png" alt="">
+                <p>SKILLS</p>
+            </div>
+            <div class="box color6">
+                <img src="https://img.icons8.com/?size=512&id=48I6tlGgpsJT&format=png" alt="">
+                <p>Address</p>
+
+            </div>
+        </div>
+        <div class="body-container">
+            <div class="body-left">
+                <div>
+                    <img src="https://lh3.googleusercontent.com/a/AAcHTtemTWW9n1LjGqbLSaTK-JzdrXbzsbs9JNexvKOYSUrSBDs=s360-c-no"
+                        alt="profile-pic">
+                    <h3>I AM RAVICHANDRAN T S</h3>
+                    <h4>FULL STACK WEB DEVELOPER</h4>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi exercitationem assumenda tempora
+                        veritatis ea at, delectus nam nemo eum, fugiat blanditiis cum expedita eos molestiae nostrum
+                        fugit molestias dolore nihil?</p>
+                    <div class="social-icons">
+                        <img src="https://cdn.iconscout.com/icon/free/png-512/free-linkedin-30-83438.png?f=avif&w=256"
+                            alt="">
+                        <img src="https://cdn.iconscout.com/icon/free/png-512/free-google-75-83437.png?f=avif&w=256"
+                            alt="">
+                        <img src="https://cdn.iconscout.com/icon/free/png-512/free-facebook-35-83440.png?f=avif&w=256"
+                            alt="">
+                        <img src="https://cdn.iconscout.com/icon/free/png-512/free-instagram-31-83432.png?f=avif&w=256"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="body-middel">
+                <h3 align="center">ABOUT</h3>
+                <hr>
+                <p><span>Full Name : </span> Ravichandran T S</p>
+                <p><span>Birthday : </span> 23/08/2002</p>
+                <p><span>Job : </span> Freelancer</p>
+                <p><span>Website : </span> ravizzz.000webhostapp.com </p>
+                <p><span>Email : </span> ravichandrants202@gmail.com</p>
+                <p><span>Phone : </span> +919113971166</p>
+                <p><span>Address : </span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium dolor
+                    nobis optio eum, dolore quis doloribus tenetur quaerat officiis doloremque ullam rem asperiores
+                    obcaecati rerum adipisci at, aperiam, temporibus quae?</p>
+            </div>
+            <div class="body-right">
+                <h3>SKILLS</h3>
+                <hr>
+                <div class="technology">
+                    <p>DJANGO</p>
+                    <div class="process-bar">
+                        <div class="width100"></div>
+                    </div>
+                </div>
+                <div class="technology">
+                    <p>HTML</p>
+                    <div class="process-bar">
+                        <div class="width80"></div>
+                    </div>
+                </div>
+                <div class="technology">
+                    <p>CSS</p>
+                    <div class="process-bar">
+                        <div class="width70"></div>
+                    </div>
+                </div>
+
+                <div class="technology">
+                    <p>JAVASCRIPT</p>
+                    <div class="process-bar">
+                        <div class="width60"></div>
+                    </div>
+                </div>
+                <div class="technology">
+                    <p>PYTHON</p>
+                    <div class="process-bar">
+                        <div class="width80"></div>
+                    </div>
+                </div>
+                <div class="technology">
+                    <p>SQL</p>
+                    <div class="process-bar">
+                        <div class="width50"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
