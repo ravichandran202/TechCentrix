@@ -110,15 +110,15 @@
         <hr>
         <div class="box-head">
             <img src="https://media.licdn.com/dms/image/D5603AQGRoEwbnAVafg/profile-displayphoto-shrink_400_400/0/1687100601863?e=1698278400&v=beta&t=cJlOmQHACShaWxmQvyoBQfJF57qp_yekHSn6OkUBzAE"
-                alt="profile-pic">
-            <h1>Ravichandran T S</h1>
+                alt="profile-pic" id="profile-img">
+            <h1 id="name">Ravichandran T S</h1>
         </div>
         <div class="box-body">
-            <p><span>Stu ID : </span> ABCDEFG </p>
-            <p><span>Course : </span> Full Stack Python </p>
-            <p><span>Email : </span> <a href="mailto:ravichandrants202@gmail.com">ravichandrants202@gmail.com</a> </p>
-            <p><span>Phone : </span> <a href="tel:9113971166">9113971166</a> </p>
-            <p><span>College : </span> MITT </p>
+            <p id="stu-id"><span>Stu ID : </span> ABCDEFG </p>
+            <p ><span>Course : </span> Full Stack Python </p>
+            <p id="stu-email"><span>Email : </span> <a href="mailto:ravichandrants202@gmail.com">ravichandrants202@gmail.com</a> </p>
+            <p id="stu-phone"><span>Phone : </span> <a href="tel:9113971166">9113971166</a> </p>
+            <p id="stu-college"><span>College : </span> MITT </p>
         </div>
         <hr>
         <div class="box-foot">
@@ -129,11 +129,38 @@
         </div>
     </div>
 <div>
-    <button>Prev</button>
-    <button>Next</button>
+    <button id="prev-btn">Prev</button>
+    <button id="next-btn">Next</button>
 </div>
     <script>
-        
+        studentData = {
+            0:{
+                'image':'http://www.techcentrix.in/images/techCentrix.png',
+                'name':'Ravichandran T S',
+                'stu-id' : 'ABCDE',
+                'stu-email':'ravichandrants202@gmail.com',
+                'stu-phone':9113971166,
+                'stu-college':'Maharaja Institute of Technology'
+            },
+            
+            1:{
+                'image':'http://www.techcentrix.in/images/techCentrix.png',
+                'name':'Ravichandran T S',
+                'stu-id' : 'ABCDE',
+                'stu-email':'ravichandrants202@gmail.com',
+                'stu-phone':9113971166,
+                'stu-college':'Maharaja Institute of Technology'
+            }
+        }
+
+        console.log(studentData)
+
+        let imageEl = document.getElementById('profile-img')
+        let nameEl = document.getElementById('name')
+        let stuidEl=document.getElementById("stu-id")
+        let emailEl = document.getElementById('stu-email')
+        let phoneEl=document.getElementById("stu-phone");
+        let collegeEl=document.getElementById("stu-college");
     </script>
 </body>
 </html>
