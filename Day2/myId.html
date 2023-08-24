@@ -16,7 +16,7 @@
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
 
-        .container{
+        .container {
             margin: 1rem;
             width: 300px;
             border: 3px solid salmon;
@@ -90,8 +90,8 @@
             width: 100px;
         }
 
-        button{
-            border:0;
+        button {
+            border: 0;
             cursor: pointer;
             background-color: salmon;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -115,8 +115,9 @@
         </div>
         <div class="box-body">
             <p id="stu-id"><span>Stu ID : </span> ABCDEFG </p>
-            <p ><span>Course : </span> Full Stack Python </p>
-            <p id="stu-email"><span>Email : </span> <a href="mailto:ravichandrants202@gmail.com">ravichandrants202@gmail.com</a> </p>
+            <p><span>Course : </span> Full Stack Python </p>
+            <p id="stu-email"><span>Email : </span> <a
+                    href="mailto:ravichandrants202@gmail.com">ravichandrants202@gmail.com</a> </p>
             <p id="stu-phone"><span>Phone : </span> <a href="tel:9113971166">9113971166</a> </p>
             <p id="stu-college"><span>College : </span> MITT </p>
         </div>
@@ -128,39 +129,134 @@
             <p>91 99014 31827, 95385 12139</p>
         </div>
     </div>
-<div>
-    <button id="prev-btn">Prev</button>
-    <button id="next-btn">Next</button>
-</div>
+    <div>
+        <button id="prev-btn">Prev</button>
+        <button id="next-btn">Next</button>
+    </div>
     <script>
-        studentData = {
-            0:{
-                'image':'http://www.techcentrix.in/images/techCentrix.png',
-                'name':'Ravichandran T S',
-                'stu-id' : 'ABCDE',
-                'stu-email':'ravichandrants202@gmail.com',
-                'stu-phone':9113971166,
-                'stu-college':'Maharaja Institute of Technology'
+        studentData = [
+            {
+                'image': 'http://www.techcentrix.in/images/techCentrix.png',
+                'name': 'Ravichandran T S',
+                'stu-id': 'ABCDE',
+                'stu-email': 'ravichandrants202@gmail.com',
+                'stu-phone': 9113971166,
+                'stu-college': 'Maharaja Institute of Technology'
             },
-            
-            1:{
-                'image':'http://www.techcentrix.in/images/techCentrix.png',
-                'name':'Ravichandran T S',
-                'stu-id' : 'ABCDE',
-                'stu-email':'ravichandrants202@gmail.com',
-                'stu-phone':9113971166,
-                'stu-college':'Maharaja Institute of Technology'
-            }
-        }
 
-        console.log(studentData)
+            {
+                'image': 'http://www.techcentrix.in/images/techCentrix.png',
+                'name': 'Sri RAm',
+                'stu-id': 'ABCDE',
+                'stu-email': 'ravichandrants202@gmail.com',
+                'stu-phone': 9113971166,
+                'stu-college': 'Maharaja Institute of Technology'
+            },
+
+            {
+                'image': 'http://www.techcentrix.in/images/techCentrix.png',
+                'name': 'Rudrayya',
+                'stu-id': 'ABCDE',
+                'stu-email': 'ravichandrants202@gmail.com',
+                'stu-phone': 9113971166,
+                'stu-college': 'Maharaja Institute of Technology'
+            },
+
+            {
+                'image': 'http://example.com/john.png',
+                'name': 'John Doe',
+                'stu-id': 'FGHIJ',
+                'stu-email': 'johndoe@example.com',
+                'stu-phone': 5551234567,
+                'stu-college': 'University of Example'
+            },
+            {
+                'image': 'http://example.com/jane.png',
+                'name': 'Jane Smith',
+                'stu-id': 'KLMNO',
+                'stu-email': 'janesmith@example.com',
+                'stu-phone': 5559876543,
+                'stu-college': 'Another University'
+            },
+            {
+                'image': 'http://example.com/alex.png',
+                'name': 'Alex Johnson',
+                'stu-id': 'PQRST',
+                'stu-email': 'alexjohnson@example.com',
+                'stu-phone': 5556789012,
+                'stu-college': 'Tech Institute'
+            },
+            {
+                'image': 'http://example.com/emily.png',
+                'name': 'Emily Brown',
+                'stu-id': 'UVWXY',
+                'stu-email': 'emilybrown@example.com',
+                'stu-phone': 5552345678,
+                'stu-college': 'Innovation University'
+            },
+            {
+                'image': 'http://example.com/michael.png',
+                'name': 'Michael Clark',
+                'stu-id': 'ZABCDE',
+                'stu-email': 'michaelclark@example.com',
+                'stu-phone': 5557890123,
+                'stu-college': 'Tech Campus College'
+            },
+            {
+                'image': 'http://example.com/sophia.png',
+                'name': 'Sophia Lee',
+                'stu-id': 'FGHIJK',
+                'stu-email': 'sophialee@example.com',
+                'stu-phone': 5553456789,
+                'stu-college': 'STEM University'
+            },
+            {
+                'image': 'http://example.com/oliver.png',
+                'name': 'Oliver Martinez',
+                'stu-id': 'LMNOPQ',
+                'stu-email': 'olivermartinez@example.com',
+                'stu-phone': 5558901234,
+                'stu-college': 'Techtonic Institute'
+            },
+            {
+                'image': 'http://example.com/emma.png',
+                'name': 'Emma Wilson',
+                'stu-id': 'RSTUVW',
+                'stu-email': 'emmawilson@example.com',
+                'stu-phone': 5554567890,
+                'stu-college': 'Innovate College'
+            },
+            {
+                'image': 'http://example.com/william.png',
+                'name': 'William Taylor',
+                'stu-id': 'XYZABC',
+                'stu-email': 'williamtaylor@example.com',
+                'stu-phone': 5555678901,
+                'stu-college': 'TechSphere University'
+            }
+        ]
 
         let imageEl = document.getElementById('profile-img')
         let nameEl = document.getElementById('name')
-        let stuidEl=document.getElementById("stu-id")
+        let stuidEl = document.getElementById("stu-id")
         let emailEl = document.getElementById('stu-email')
-        let phoneEl=document.getElementById("stu-phone");
-        let collegeEl=document.getElementById("stu-college");
+        let phoneEl = document.getElementById("stu-phone");
+        let collegeEl = document.getElementById("stu-college");
+        let nextBtn = document.getElementById('next-btn')
+        let prevBtn = document.getElementById('prev-btn')
+        let index = 0;
+
+        nextBtn.addEventListener('click', () => {
+            index += 1;
+            imageEl.setAttribute('src', studentData[index]["image"])
+            nameEl.innerText =   studentData[index]["name"]
+            stuidEl.innerHTML = ```<span>Stu ID : </span> ${studentData[index]['stu-id']}```
+            console.log(```<span>Stu ID : </span> ${studentData[index]['stu-id']}```);
+            emailEl.innerHTML =  ```<span>Email : </span> <a href='mailto:${studentData[index]['stu-id']}'>${studentData[index]['stu-id']}</a>```
+            phoneEl.innerHTML =   ```<span>Phone : </span> ${studentData[index]["stu-phone"]}```
+            collegeEl.innerHTML = ```<span>College : </span> ${studentData[index]["stu-college"]}```
+        })
     </script>
 </body>
+
 </html>
