@@ -247,14 +247,16 @@
         let index = 0;
 
         nextBtn.addEventListener('click', () => {
+            if(index==studentData.length)
+                 index = 0
             index += 1;
             imageEl.setAttribute('src', studentData[index]["image"])
             nameEl.innerText =   studentData[index]["name"]
-            stuidEl.innerHTML = ```<span>Stu ID : </span> ${studentData[index]['stu-id']}```
-            console.log(```<span>Stu ID : </span> ${studentData[index]['stu-id']}```);
-            emailEl.innerHTML =  ```<span>Email : </span> <a href='mailto:${studentData[index]['stu-id']}'>${studentData[index]['stu-id']}</a>```
-            phoneEl.innerHTML =   ```<span>Phone : </span> ${studentData[index]["stu-phone"]}```
-            collegeEl.innerHTML = ```<span>College : </span> ${studentData[index]["stu-college"]}```
+            stuidEl.innerHTML = `<span>Stu ID : </span> ${studentData[index]['stu-id']}`
+            console.log(`<span>Stu ID : </span> ${studentData[index]['stu-id']}`);
+            emailEl.innerHTML =  `<span>Email : </span> <a href='mailto:${studentData[index]['stu-id']}'>${studentData[index]['stu-id']}</a>`
+            phoneEl.innerHTML =   `<span>Phone : </span> ${studentData[index]["stu-phone"]}`
+            collegeEl.innerHTML = `<span>College : </span> ${studentData[index]["stu-college"]}`
         })
     </script>
 </body>
