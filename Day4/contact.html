@@ -19,6 +19,7 @@
             width: 100vw;
             height: 100vh;
             font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
         }
 
         .container {
@@ -129,6 +130,55 @@
             font-weight: 600;
             color: aliceblue;
         }
+
+        @media screen and (max-width:920px) {
+            .container h1 {
+                font-size: 2rem;
+            }
+
+            .body-container {
+                display: block;
+                justify-content: space-between;
+                /* align-items: center; */
+            }
+
+            .mapouter {
+                width: 95%;
+                height: 500px;
+                margin: 1rem;
+            }
+
+            .contact-details {
+                padding: 0rem 1rem;
+                width: 100%;
+            }
+
+            .form-field {
+                margin-top: 1rem;
+                padding: .5rem;
+                width: 100%;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+        }
+
+        @media screen and (max-width:520px) {
+            .header {
+                color: aliceblue;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 15vh;
+                background-color: #fa7e61;
+                text-align: center;
+            }
+
+            .mapouter {
+                width: 90%;
+                height: 500px;
+                margin: 1rem;
+            }
+        }
     </style>
 </head>
 
@@ -180,7 +230,7 @@
 
         </div>
     </div>
-    <script>
+    <!-- <script>
 
         let classEl = document.querySelectorAll('.header span')
         let index = 0
@@ -197,7 +247,7 @@
             classEl[index].style.color = '#641200'
             index++;
         }, 50)
-    </script>
+    </script> -->
 </body>
 
 </html>
