@@ -1,0 +1,13 @@
+Day 1 : Basic Introductions
+Day 2 : Basic HTML
+Day 3 : Basic CSS
+Day 4 : Advance CSS
+Day 5 : Bootstrap
+Day 6 : Advance Bootstrap
+Day 7 : Templates Based on Bootstrap
+Day 8 : Basics in SQL
+Day 9 : Advance in SQL
+Day 10 : Problems in SQL
+Day 11 : Basic Python
+Day 12 : Python Datastructures
+Day 13 : Python FileOperations
