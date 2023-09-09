@@ -1,5 +1,5 @@
 import qrcode
-
+#using qrCode module
 print('---------USER PORTFOLIO---------')
 name = input('Enter Name : ')
 contact = input('Enter Contact : ')
