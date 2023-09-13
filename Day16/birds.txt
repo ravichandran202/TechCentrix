@@ -1,0 +1,69 @@
+Pigeon
+Peacock
+Parrot
+Sparrow
+Woodpecker
+Owl
+Kingfisher
+Crow
+Kite
+Eagle
+Swan
+Ostrich
+Dove
+Crane
+Duck
+Robin
+Penguin
+Hummingbird
+Turkey
+Flamingo
+Gull
+Rooster
+Vulture
+Hornbill
+Nightingale
+Mynah
+Hen
+Egyptian Vulture
+Duckling
+Cuckoo
+Chick
+Quail
+Pewit
+Wagtail
+Weaver
+Tailorbird
+Swallow
+Peregrine Falcon
+Pelican
+Stork
+Skylark
+Seagull
+Sandpipe
+Raven
+Partridge
+Osprey
+Male Falcon
+Kiwi
+Lark
+Heron
+Hoopoe
+Hawk-Cuckoo, Brain fever
+Great Egret
+Goose
+Falcon
+Eurasian Hobby
+Eider
+Drake
+Blue jay
+Cormorants
+Cockatoo
+Chukar
+Cock
+Bluebird
+Alexandrine Parakeet -min
+Avocet
+Cygnet
+Gander
+Grebe
