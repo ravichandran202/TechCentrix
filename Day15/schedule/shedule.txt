@@ -10,4 +10,4 @@ Day 9 : Advance in SQL
 Day 10 : Problems in SQL
 Day 11 : Basic Python
 Day 12 : Python Datastructures
-Day 13 : Python FileOperations
+Day 13 : Python FileOperation
